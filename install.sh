@@ -21,32 +21,39 @@ if which git >/dev/null; then
                         if [ -d "/tmp/chfs_deploy/chfs/config/" ]; then
                             if [ -d "/tmp/chfs_deploy/chfs/log" ]; then
                                 if [ -d "/tmp/chfs_deploy/chfs/resource/" ]; then
-
+                                    if [ -f "/tmp/chfs_deploy/install.sh" ]; then
+                                        if [ -f "/tmp/chfs_deploy/chfs/start.sh" ]; then
+                                            break
+                                        else
+                                            echo "仓库未部署，请重新配置"
+                                        fi
+                                    else
+                                        echo "仓库未部署，请重新配置"
+                                    fi
                                 else
-
+                                    echo "仓库未部署，请重新配置"
                                 fi
                             else
-
+                                echo "仓库未部署，请重新配置"
                             fi
                         else
-
+                            echo "仓库未部署，请重新配置"
                         fi
                     else
-
+                        echo "仓库未部署，请重新配置"
                     fi
-
                 else
-
+                    echo "仓库未部署，请重新配置"
                 fi
-
             else
-
+                echo "仓库未部署，请重新配置"
             fi
-            break
         else
             echo "输入错误，请重新输入"
         fi
     done
+
+    sudo cp -rf /tmp/chfs_deploy/chfs /opt/
 
 else
     echo "请安装 Git 后继续。"
