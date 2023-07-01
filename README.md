@@ -2,7 +2,7 @@
 
 > 一键部署 Linux 下的文件服务器
 
-本程序依赖于 [chfs][http://iscute.cn/chfs] 提供 Linux 下的一键部署脚本，更多详情请参考 chfs 官网
+本程序依赖于 [chfs](http://iscute.cn/chfs) 提供 Linux 下的一键部署脚本，更多详情请参考 chfs 官网
 
 ## 安装脚本
 
