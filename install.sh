@@ -2,7 +2,8 @@
 
 printf "安装程序将会对 /opt 目录作出修改并且会增加系统服务。请确保当前用户具有 sudo 权限，以防止出现意外情况或对系统造成不良影响。\n"
 printf "拒绝请使用 Ctrl-C 。同意请按 Enter 键继续。。。"
-# read
+
+read
 
 echo "即将克隆 github.com/zerobiubiu/chfs_deploy.git 仓库，请确保网络通常，如网络不稳定请 Ctrl-C 结束本程序并手动将该仓库克隆至 /tmp/chfs_deploy/ 目录下，并确保目录格式为 /tmp/chfs_deploy/仓库内容 而非 /tmp/chfs_deploy/chfs_deploy/仓库内容 如不严格按照目录格式程序将无法执行。"
 
