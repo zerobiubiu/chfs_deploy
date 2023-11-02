@@ -17,7 +17,7 @@ while true; do
             break
         else
             echo "请安装 Git 后继续。"
-            exit(1)
+            exit 1
         fi
     elif [ "$input" = "n" ] || [ "$input" = "no" ]; then
         if [ -d "/tmp/chfs_deploy/" ]; then
