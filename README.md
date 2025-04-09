@@ -15,8 +15,8 @@
 
 | 安装方式 | 命令 | 说明 |
 | ---- | ---- | ---- |
-| CURL | `curl -o- https://cdn.jsdelivr.net/gh/zerobiubiu/chfs_deploy@main/install.sh | sh` | 通过 `curl` 下载脚本并直接执行 |
-| WGET | `wget -qO- https://cdn.jsdelivr.net/gh/zerobiubiu/chfs_deploy@main/install.sh | sh` | 通过 `wget` 下载脚本并直接执行 |
+| CURL | `curl -o- https://cdn.jsdelivr.net/gh/zerobiubiu/chfs_deploy@main/install.sh \| sh` | 通过 `curl` 下载脚本并直接执行 |
+| WGET | `wget -qO- https://cdn.jsdelivr.net/gh/zerobiubiu/chfs_deploy@main/install.sh \| sh` | 通过 `wget` 下载脚本并直接执行 |
 | 手动下载 | 1. 下载脚本：`wget https://cdn.jsdelivr.net/gh/zerobiubiu/chfs_deploy@main/install.sh`<br>2. 赋予执行权限：`chmod +x install.sh`<br>3. 运行脚本：`sudo ./install.sh` | 手动下载脚本，设置执行权限后运行 |
 
 ## 注意事项
